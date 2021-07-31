@@ -1,0 +1,52 @@
+.clock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    border-radius: 1em;
+    padding: 1em;
+    .clock_real{
+        position: relative;
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        background: url('./clock.jpg');
+        background-size: 8em
+        ;
+        .clock_real_hourP{
+            width: 0.3em;
+            height: 1.2em;
+            position: absolute;
+            left:3.85em;
+            top: 4em;
+            background: lightcoral;
+            transform-origin: top center;
+        }
+        .clock_real_minuteP{
+            width: 0.2em;
+            height: 2em;
+            position: absolute;
+            left:3.9em;
+            top: 4em;
+            background: green;
+            transform-origin: top center;
+        }
+        .clock_real_secondP{
+            width: 0.1em;
+            height: 2.5em;
+            position: absolute;
+            left:3.95em;
+            top: 4em;
+            background: lightslategray;
+            transform-origin: top center;
+        }
+    }
+    .clock_time{
+        font-size: 4em;
+        margin: 0.5em;
+    }
+    .clock_date{
+        font-size: 1em;
+    }
+}
